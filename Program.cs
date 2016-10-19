@@ -155,19 +155,31 @@ namespace ConsoleApplication2
              }*/
 
             //Silnia z liczby a
-           /* 
-             int a,i,c=1;
-             Console.WriteLine("Podaj liczbe a");
-             a = int.Parse(Console.ReadLine());
-             
-             if(a>0)
-            {
-                for (i = 1; i<=a; i++)
-                {
-                    c *= i;
-                }
-                Console.WriteLine(c);
-            }*/
+            /* 
+              int a,i,c=1;
+              Console.WriteLine("Podaj liczbe a");
+              a = int.Parse(Console.ReadLine());
+
+              if(a>0)
+             {
+                 for (i = 1; i<=a; i++)
+                 {
+                     c *= i;
+                 }
+                 Console.WriteLine(c);
+            */
+            Car e36 = new Car("BMW", 1993, 5, 1.8, 9);
+            Console.WriteLine("Mój samochod jest marki {0}", e36.Marka);
+            Console.WriteLine("Rok Produkcji {0}", e36.Rok);
+            Console.WriteLine("Ilość drzwi {0}", e36.Ilosc_drzwi);
+            Console.WriteLine("Pojemność Silnika {0}l", e36.Poj_silnika);
+            Console.WriteLine("Średnie spalanie tego samochodu {0}", e36.Sr_spalanie);
+            Console.WriteLine("Sredni Koszt przejazdu 100KM {0} to PLN", e36.oblicz_koszt_przejazdu(100, 4.44));
+            Console.WriteLine(Car.opiszTyp(1,2));
+            Console.WriteLine(Car.opiszTyp(1));
+            Console.WriteLine(Car.opiszTyp("jakis napis"));
+          
+
             Console.ReadKey();
         }
     }
